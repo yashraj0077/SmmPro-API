@@ -11,8 +11,8 @@
   class SmmProApi
   {
 
-    private static $api_endpoint = "https://www.smmpro.io/api/v1";
-    private static $api_key = "b89ea8-6f1a5c-4f5074-a4db41-47ef9d"; // Replace by Your API key
+    private static $api_endpoint = "http://dev.smmpro.io/api/v1";
+    private static $api_key = "a6c756-8f0308-b8af39-72d22b-68d4ad"; // Replace by Your API key
 
     public function newOrder($data){
       $post = array_merge(
@@ -66,7 +66,6 @@
       }
       curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0)');
       $result = curl_exec($ch);
-      print_r($result);
       if (curl_errno($ch) != 0 && empty($result)) {
         $result = false;
       }
@@ -112,7 +111,7 @@
 
 
   print_r($balance);
-  print_r($services);
+  //print_r($services);
   //print_r($order_status);
   //print_r($new_order);
 
