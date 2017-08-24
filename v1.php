@@ -105,7 +105,7 @@
   $new_order = $api->newOrder(
     array(
     'service_id' => 92,
-    'link' => 'http://www.instagram.com/gabay__may',
+    'link' => 'http://www.instagram.com/test',
     'quantity' => 100
     )
   );*/
