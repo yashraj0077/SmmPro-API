@@ -11,7 +11,7 @@
   class SmmProApi
   {
 
-    private static $api_endpoint = "http://dev.smmpro.io/api/v1";
+    private static $api_endpoint = "http://www.smmpro.io/api/v1";
     private static $api_key = "a6c756-8f0308-b8af39-72d22b-68d4ad"; // Replace by Your API key
 
     public function newOrder($data){
